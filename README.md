@@ -21,6 +21,10 @@ Api Rest neoris
 	📌 Despliegue Aplicación						
 			◾ Ejecutar comando en la raiz del proyecto
 				◾ docker-compose up --build (Este comando se encarga de desplegar la aplicación junto con la base de datos)
+				◾ despues de desplegar la aplicación y la BD, se debe conectar a la base de datos con un cliente de mysql (MySql Workbench) y crear las tablas que se encuentran en el script scripts_mysql/BaseDatos.sql
+				
+	📌 Probar la aplicación
+		◾ Importar las colecciones de postman que se encuentran en la carpeta postman, estas colecciones tienen los request de /clientes, /cuentas y /movimientos.
 				
 --------------------------------------------
 ## Author
