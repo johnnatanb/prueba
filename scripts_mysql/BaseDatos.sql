@@ -39,5 +39,3 @@ CREATE TABLE IF NOT EXISTS movimientos (
   foreign key (numero_cuenta) references cuenta(numero_cuenta) on delete cascade on update cascade, 
   primary key (id)
 );
-
-SELECT table_name FROM information_schema.tables;
