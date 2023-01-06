@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="41031db1-7c5b-4a09-bd6d-ad96ec3ce3fa" name="neoris" url="jdbc:postgresql://localhost/neoris" driverClass="org.postgresql.Driver" />
+      <data-source id="088b4719-23e5-496c-9517-3c68af7ceb78" name="neoris1" url="jdbc:mysql://localhost:3307/neoris?useSSL=false&amp;allowMultiQueries=true&amp;serverTimezone=UTC" driverClass="com.mysql.cj.jdbc.Driver" />
+    </data-sources>
+    <data-source-infos>
+      <data-source-info id="088b4719-23e5-496c-9517-3c68af7ceb78" persistence-unit-name="Default" />
+    </data-source-infos>
+  </component>
+</project>
