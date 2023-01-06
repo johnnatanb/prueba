@@ -1,0 +1,543 @@
+{
+	"info": {
+		"_postman_id": "2daf6ac4-3442-43e9-be2e-93f2cc9ffb06",
+		"name": "Prueba Neoris",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13158559"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Insertar Jose Lema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identificacion\":1,\r\n    \"nombre\":\"Jose Lema\",\r\n    \"genero\":\"Masculino\",\r\n    \"edad\":\"33\",\r\n    \"direccion\":\"Otavalo sn y principal\",\r\n    \"telefono\":\"098254785\",\r\n    \"contrasena\":\"1234\",\r\n    \"estado\":\"True\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/clientes",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar Marianela Montalvo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identificacion\":1,\r\n    \"nombre\":\"Marianela Montalvo\",\r\n    \"genero\":\"Femenino\",\r\n    \"edad\":\"35\",\r\n    \"direccion\":\"Amazonas y NNUU\",\r\n    \"telefono\":\"097548965\",\r\n    \"contrasena\":\"5678\",\r\n    \"estado\":\"True\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/clientes",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar Juan Osorio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identificacion\":3,\r\n    \"nombre\":\"Juan Osorio\",\r\n    \"genero\":\"Masculino\",\r\n    \"edad\":\"33\",\r\n    \"direccion\":\"13 junio y Equinoccial\",\r\n    \"telefono\":\"098874587\",\r\n    \"contrasena\":\"1245\",\r\n    \"estado\":\"True\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/clientes",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/clientes",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n    \"nombre\":\"pepito pablo\",\r\n    \"genero\":\"masculino\",\r\n    \"edad\":\"33\",\r\n    \"direccion\":\"calle falsa\",\r\n    \"telefono\":\"3111111\",\r\n    \"contrasena\":\"pass\",\r\n    \"estado\":\"Activo\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/clientes/10",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"clientes",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/clientes/10",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"clientes",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cuentas",
+			"item": [
+				{
+					"name": "Insertar 478758",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numero_cuenta\":478758,\r\n    \"tipo_cuenta\":\"Ahorro\",\r\n    \"saldo_inicial\":2000,\r\n    \"estado\":\"True\",\r\n    \"identificacion\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/cuentas",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar 225487",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numero_cuenta\":225487,\r\n    \"tipo_cuenta\":\"Corriente\",\r\n    \"saldo_inicial\":100,\r\n    \"estado\":\"True\",\r\n    \"identificacion\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/cuentas",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar 495878",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numero_cuenta\":495878,\r\n    \"tipo_cuenta\":\"Ahorros\",\r\n    \"saldo_inicial\":0,\r\n    \"estado\":\"True\",\r\n    \"identificacion\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/cuentas",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar 496825",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numero_cuenta\":496825,\r\n    \"tipo_cuenta\":\"Ahorros\",\r\n    \"saldo_inicial\":540,\r\n    \"estado\":\"True\",\r\n    \"identificacion\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/cuentas",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar 585545",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numero_cuenta\":585545,\r\n    \"tipo_cuenta\":\"Corriente\",\r\n    \"saldo_inicial\":1000,\r\n    \"estado\":\"True\",\r\n    \"identificacion\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/cuentas",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/cuentas",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo_cuenta\":\"Corriente\",\r\n    \"saldo_inicial\":2000,\r\n    \"estado\":\"True\",\r\n    \"identificacion\":10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/cuentas/10",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"cuentas",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/cuentas/10",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"cuentas",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimientos",
+			"item": [
+				{
+					"name": "Movimiento Retiro 478758",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo_movimiento\":\"RETIRO\",\r\n    \"valor\":-575,\r\n    \"numero_cuenta\":478758\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/movimientos",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimiento Deposito 225487",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo_movimiento\":\"DEPOSITO\",\r\n    \"valor\":600,\r\n    \"numero_cuenta\":225487\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/movimientos",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimiento Deposito 495878",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo_movimiento\":\"DEPOSITO\",\r\n    \"valor\":150,\r\n    \"numero_cuenta\":495878\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/movimientos",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimiento Retiro 496825",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo_movimiento\":\"RETIRO\",\r\n    \"valor\":-540,\r\n    \"numero_cuenta\":496825\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/movimientos",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{LOCALHOST}}/movimientos/2?desde=2023-01-06&hasta=2023-01-06",
+							"host": [
+								"{{LOCALHOST}}"
+							],
+							"path": [
+								"movimientos",
+								"2"
+							],
+							"query": [
+								{
+									"key": "desde",
+									"value": "2023-01-06"
+								},
+								{
+									"key": "hasta",
+									"value": "2023-01-06"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
