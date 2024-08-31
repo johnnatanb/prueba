@@ -1,4 +1,4 @@
-## 📌 Proyecto prueba neoris 📌
+## 📌 Proyecto prueba 📌
 Api Rest neoris
 
 --------------------
